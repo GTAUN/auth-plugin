@@ -44,4 +44,9 @@
       </plugin>
     </plugins>
   </build>
+  <scm>
+  	<url>https://github.com/Shoebill/Authentication</url>
+  	<connection>scm:git:git://github.com/Shoebill/Authentication.git</connection>
+  	<developerConnection>scm:git:git@github.com:Shoebill/Authentication.git</developerConnection>
+  </scm>
 </project>
