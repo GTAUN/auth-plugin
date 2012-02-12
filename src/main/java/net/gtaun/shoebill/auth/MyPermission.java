@@ -1,4 +1,4 @@
-package net.gtaun.JoJLlmAn.Auth;
+package net.gtaun.shoebill.auth;
 
 import java.io.File;
 import java.util.Collection;

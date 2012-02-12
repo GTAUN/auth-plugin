@@ -1,4 +1,4 @@
-package net.gtaun.JoJLlmAn.Auth;
+package net.gtaun.shoebill.auth;
 
 import net.gtaun.shoebill.object.IPlayer;
 
