@@ -1,5 +1,4 @@
 /**
- * Copyright (C) 2012 JoJLlmAn
  * Copyright (C) 2012 MK124
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -15,16 +14,18 @@
  * limitations under the License.
  */
 
-package net.gtaun.shoebill.auth.authorize;
+package net.gtaun.shoebill.auth.authorize.signer;
+
+import net.gtaun.shoebill.auth.authorize.Authorizer;
 
 /**
- * @author JoJLlmAn, MK124
+ * @author MK124
  *
  */
 
-public interface Authorizer
+public interface PasswordSigner extends Authorizer
 {
-	boolean authorize( String user, byte[] sign );
-	boolean registerAuthorization( String user, byte[] sign );
+	boolean authorize( String user, String password );
+	boolean registerAuthorization( String user, String password );
 	boolean isRegistedAuthorization( String user );
 }

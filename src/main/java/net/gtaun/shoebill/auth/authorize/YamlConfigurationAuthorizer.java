@@ -1,5 +1,4 @@
 /**
- * Copyright (C) 2012 JoJLlmAn
  * Copyright (C) 2012 MK124
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,14 +16,40 @@
 
 package net.gtaun.shoebill.auth.authorize;
 
+import java.io.File;
+
+import net.gtaun.shoebill.util.config.YamlConfiguration;
+
 /**
- * @author JoJLlmAn, MK124
+ * @author MK124
  *
  */
 
-public interface Authorizer
+public class YamlConfigurationAuthorizer extends ConfigurationAuthorizer
 {
-	boolean authorize( String user, byte[] sign );
-	boolean registerAuthorization( String user, byte[] sign );
-	boolean isRegistedAuthorization( String user );
+	public YamlConfigurationAuthorizer( File file )
+	{
+		super( new YamlConfiguration(file) );
+	}
+	
+	public YamlConfigurationAuthorizer( YamlConfiguration configuration )
+	{
+		super( configuration );
+	}
+
+	@Override
+	public YamlConfiguration getConfiguration()
+	{
+		return (YamlConfiguration) super.getConfiguration();
+	}
+	
+	public void save()
+	{
+		getConfiguration().save();
+	}
+	
+	public void load()
+	{
+		getConfiguration().load();
+	}
 }

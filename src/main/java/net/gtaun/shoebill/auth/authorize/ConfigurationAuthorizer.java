@@ -17,7 +17,6 @@
 
 package net.gtaun.shoebill.auth.authorize;
 
-import net.gtaun.shoebill.object.IPlayer;
 import net.gtaun.shoebill.util.config.Configuration;
 
 /**
@@ -27,26 +26,34 @@ import net.gtaun.shoebill.util.config.Configuration;
 
 public class ConfigurationAuthorizer implements Authorizer
 {
+	private Configuration configuration;
+	
+	
 	public ConfigurationAuthorizer( Configuration configuration )
 	{
 		
 	}
+
+	public Configuration getConfiguration()
+	{
+		return configuration;
+	}
 	
 	
 	@Override
-	public boolean authorize( IPlayer player, byte[] sign )
+	public boolean authorize( String user, byte[] sign )
 	{
 		return false;
 	}
 
 	@Override
-	public boolean registerAuthorization( IPlayer player, byte[] sign )
+	public boolean registerAuthorization( String user, byte[] sign )
 	{
 		return false;
 	}
 
 	@Override
-	public boolean isRegistedAuthorization( IPlayer player )
+	public boolean isRegistedAuthorization( String user )
 	{
 		return false;
 	}

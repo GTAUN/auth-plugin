@@ -43,4 +43,14 @@ public class YamlConfigurationPermissions extends ConfigurationPermissions
 	{
 		return (YamlConfiguration) super.getConfiguration();
 	}
+	
+	public void save()
+	{
+		getConfiguration().save();
+	}
+	
+	public void load()
+	{
+		getConfiguration().load();
+	}
 }
