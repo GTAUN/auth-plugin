@@ -40,7 +40,6 @@ public class AuthPlugin extends Plugin
 		
 	}
 	
-	
 	@Override
 	protected void onEnable()
 	{
