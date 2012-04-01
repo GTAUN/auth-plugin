@@ -21,7 +21,7 @@ package net.gtaun.shoebill.auth;
 import net.gtaun.shoebill.auth.authorize.Authorizer;
 import net.gtaun.shoebill.auth.permission.Permissions;
 import net.gtaun.shoebill.auth.ui.LoginInterface;
-import net.gtaun.shoebill.plugin.Plugin;
+import net.gtaun.shoebill.resource.Plugin;
 
 /**
  * @author MK124, JoJLlmAn
