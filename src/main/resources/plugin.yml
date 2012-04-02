@@ -1,6 +1,7 @@
 class: net.gtaun.shoebill.auth.AuthPlugin
 name: AuthPlugin
-version: 0.1.0${build.number.attach}-SNAPSHOT
-date: ${build.timestamp}
+version: 0.1.0-SNAPSHOT
 authors: MK124, JoJLlmAn
 description: 
+buildNumber: ${build.number}
+buildDate: ${build.timestamp}

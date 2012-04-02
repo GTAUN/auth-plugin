@@ -23,6 +23,9 @@ import net.gtaun.shoebill.auth.permission.Permissions;
 import net.gtaun.shoebill.auth.ui.LoginInterface;
 import net.gtaun.shoebill.resource.Plugin;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author MK124, JoJLlmAn
  *
@@ -30,6 +33,9 @@ import net.gtaun.shoebill.resource.Plugin;
 
 public class AuthPlugin extends Plugin
 {
+	private static final Logger LOGGER = LoggerFactory.getLogger(AuthPlugin.class);
+	
+	
 	private Authorizer authorizer;
 	private Permissions permissions;
 	private LoginInterface loginInterface;
@@ -43,12 +49,16 @@ public class AuthPlugin extends Plugin
 	@Override
 	protected void onEnable()
 	{
-
+		String startupMessage = getDescription().getName() + " " + getDescription().getVersion();
+		if( getDescription().getBuildNumber() != 0 ) startupMessage += " Build " + getDescription().getBuildNumber();
+		startupMessage += " Enabled.";
+		
+		LOGGER.info( startupMessage );
 	}
 
 	@Override
 	protected void onDisable()
 	{
-		
+		LOGGER.info( getDescription().getName() + " " + getDescription().getVersion() + " Disabled." );
 	}
 }
