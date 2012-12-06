@@ -15,7 +15,6 @@
  * limitations under the License.
  */
 
-
 package net.gtaun.shoebill.auth;
 
 import net.gtaun.shoebill.auth.authorize.Authorizer;
@@ -27,8 +26,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
+ * 
+ * 
  * @author MK124, JoJLlmAn
- *
  */
 
 public class AuthPlugin extends Plugin

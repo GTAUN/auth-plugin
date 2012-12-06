@@ -17,14 +17,15 @@
 
 package net.gtaun.shoebill.auth.permission;
 
-import net.gtaun.shoebill.object.IPlayer;
+import net.gtaun.shoebill.object.Player;
+import net.gtaun.shoebill.service.Service;
 
 /**
  * @author JoJLlmAn, MK124
  *
  */
 
-public interface Permissions
+public interface Permissions extends Service
 {
-	boolean getPermission(String permission, IPlayer player);
+	boolean getPermission(String permission, Player player);
 }

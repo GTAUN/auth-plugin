@@ -21,10 +21,10 @@ import java.io.File;
 import net.gtaun.shoebill.util.config.YamlConfiguration;
 
 /**
+ * 
+ * 
  * @author MK124
- *
  */
-
 public class YamlConfigurationPermissions extends ConfigurationPermissions
 {
 	public YamlConfigurationPermissions( File file )

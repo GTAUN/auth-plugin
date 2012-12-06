@@ -17,15 +17,15 @@
 
 package net.gtaun.shoebill.auth.ui;
 
-import net.gtaun.shoebill.object.IPlayer;
+import net.gtaun.shoebill.object.Player;
 
 /**
+ * 
+ * 
  * @author JoJLlmAn, MK124
- *
  */
-
 public interface LoginInterface
 {
-	void requestLogin( IPlayer player );
-	void logout(IPlayer player);
+	void requestLogin( Player player );
+	void logout(Player player);
 }

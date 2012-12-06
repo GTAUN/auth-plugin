@@ -19,10 +19,10 @@ package net.gtaun.shoebill.auth.authorize.signer;
 import net.gtaun.shoebill.auth.authorize.Authorizer;
 
 /**
+ * 
+ * 
  * @author MK124
- *
  */
-
 public interface PasswordSigner extends Authorizer
 {
 	boolean authorize( String user, String password );

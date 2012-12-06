@@ -3,12 +3,12 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.gtaun.shoebill</groupId>
-	<artifactId>auth</artifactId>
+	<artifactId>auth-plugin</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
-
-	<name>Authentication</name>
+	
+	<name>Authentication Plugin</name>
 	<description></description>
-	<url>https://github.com/Shoebill/Auth</url>
+	<url>https://github.com/mk124/auth-plugin</url>
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -23,9 +23,9 @@
 	</licenses>
 
 	<scm>
-		<url>https://github.com/Shoebill/Auth</url>
-		<connection>scm:git:git://github.com/Shoebill/Auth.git</connection>
-		<developerConnection>scm:git:git@github.com:Shoebill/Auth.git</developerConnection>
+		<url>https://github.com/mk124/auth-plugin</url>
+		<connection>scm:git:git://github.com/mk124/auth-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:mk124/auth-plugin.git</developerConnection>
 	</scm>
 
 	<developers>
@@ -38,6 +38,7 @@
 			<organizationUrl>https://github.com/Shoebill</organizationUrl>
 			<timezone>+8</timezone>
 		</developer>
+		
 		<developer>
 			<name>JoJLlmAn</name>
 			<id>JoJLlmAn</id>
@@ -56,22 +57,14 @@
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/Shoebill/Auth/issues</url>
+		<url>https://github.com/mk124/auth-plugin/issues</url>
 	</issueManagement>
 
 	<dependencies>
 		<dependency>
 			<groupId>net.gtaun</groupId>
-			<artifactId>shoebill</artifactId>
+			<artifactId>shoebill-api</artifactId>
 			<version>0.2.0-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-lang3</artifactId>
-			<version>3.1</version>
-			<type>jar</type>
-			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 

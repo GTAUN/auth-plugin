@@ -18,10 +18,10 @@
 package net.gtaun.shoebill.auth.authorize;
 
 /**
+ * 
+ * 
  * @author JoJLlmAn, MK124
- *
  */
-
 public interface Authorizer
 {
 	boolean authorize( String user, byte[] sign );

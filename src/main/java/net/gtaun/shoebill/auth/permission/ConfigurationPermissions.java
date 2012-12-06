@@ -22,14 +22,14 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-import net.gtaun.shoebill.object.IPlayer;
+import net.gtaun.shoebill.object.Player;
 import net.gtaun.shoebill.util.config.Configuration;
 
 /**
+ * 
+ * 
  * @author JoJLlmAn, MK124
- *
  */
-
 public class ConfigurationPermissions implements Permissions
 {
 	Configuration configuration;
@@ -53,7 +53,7 @@ public class ConfigurationPermissions implements Permissions
 	}
 	
 	@SuppressWarnings("unchecked")
-	public boolean getPermission(String permission, IPlayer player)
+	public boolean getPermission(String permission, Player player)
 	{
 		String playerName = player.getName();
 		

@@ -16,13 +16,13 @@
 
 package net.gtaun.shoebill.auth.ui;
 
-import net.gtaun.shoebill.object.IPlayer;
+import net.gtaun.shoebill.object.Player;
 
 /**
+ * 
+ * 
  * @author MK124
- *
  */
-
 public class CommandLoginInterface implements LoginInterface
 {
 	public CommandLoginInterface()
@@ -32,13 +32,13 @@ public class CommandLoginInterface implements LoginInterface
 	
 	
 	@Override
-	public void requestLogin( IPlayer player )
+	public void requestLogin( Player player )
 	{
 		
 	}
 
 	@Override
-	public void logout( IPlayer player )
+	public void logout( Player player )
 	{
 		
 	}
